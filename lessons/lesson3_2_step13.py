@@ -9,11 +9,11 @@ class test_registration(unittest.TestCase):
         browser.get(link)
 
         # Ваш код, который заполняет обязательные поля
-        input1 = browser.find_element_by_css_selector(".first[placeholder='Input your first name']")
+        input1 = browser.find_element_by_xpath("//input[@placeholder ='Input your first name']")
         input1.send_keys("Ivan")
-        input2 = browser.find_element_by_css_selector(".second[placeholder='Input your last name']")
+        input2 = browser.find_element_by_xpath("//input[@placeholder ='Input your last name']")
         input2.send_keys("Ivanov")
-        input3 = browser.find_element_by_css_selector(".third[placeholder='Input your email']")
+        input3 = browser.find_element_by_xpath("//input[@placeholder ='Input your email']")
         input3.send_keys("test@test.com")
 
         # Отправляем заполненную форму
@@ -36,11 +36,11 @@ class test_registration(unittest.TestCase):
         browser.get(link)
 
         # Ваш код, который заполняет обязательные поля
-        input1 = browser.find_element_by_css_selector(".first[placeholder='Input your first name']")
+        input1 = browser.find_element_by_xpath("//input[@placeholder ='Input your first name']")
         input1.send_keys("Ivan")
-        input2 = browser.find_element_by_css_selector(".second[placeholder='Input your last name']")
+        input2 = browser.find_element_by_xpath("//input[@placeholder ='Input your last name']")
         input2.send_keys("Ivanov")
-        input3 = browser.find_element_by_css_selector(".third[placeholder='Input your email']")
+        input3 = browser.find_element_by_xpath("//input[@placeholder ='Input your email']")
         input3.send_keys("test@test.com")
 
         # Отправляем заполненную форму
